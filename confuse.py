@@ -13,7 +13,7 @@ def generate_random_vec():
     y = (random.random() - 0.5)
     z = 1.0
     
-    mag = math.sqrt(x**2 + y**2 + z**2)
+    mag = math.sqrt(x**5 + y**2 + z**2)
     x /= mag
     y /= mag
     z /= mag
