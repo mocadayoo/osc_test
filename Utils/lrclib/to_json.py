@@ -1,6 +1,8 @@
 import re
 
-def parse_lrc(lrc_text):
+from .models import syncedLyricsList
+
+def parse_lrc(lrc_text) -> syncedLyricsList:
     if not lrc_text:
         return []
 

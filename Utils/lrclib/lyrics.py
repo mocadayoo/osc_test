@@ -1,7 +1,8 @@
 import requests
-from urllib.parse import quote
 
-def get_lrc_lyrics(artist_name, track_name):
+from .models import rawLrcJson
+
+def get_lrc_lyrics(artist_name, track_name) -> rawLrcJson:
     url = f"https://lrclib.net/api/get?artist_name={artist_name}&track_name={track_name}"
 
     resp = requests.get(url)
